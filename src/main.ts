@@ -12,7 +12,7 @@ scoreText.textContent = "click to start!";
 let isJumping = false;
 let gameOver = true;
 
-document.addEventListener("click", () => jump());
+document.addEventListener("mousedown", () => jump());
 
 function main(): void {
   if (!gameOver) {
@@ -65,7 +65,7 @@ function checkCollision() {
 
   //get bird position
   const birdleft = parseInt(
-    window.getComputedStyle(bird).getPropertyValue("l"),
+    window.getComputedStyle(bird).getPropertyValue("bottom"),
   );
   if (
     (dinoTop >= 150 && Math.abs(cactusleft) < 7) ||
