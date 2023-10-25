@@ -1,5 +1,3 @@
-//purposely bad code so students can fix it - can make it worse
-
 import "./style.css";
 
 const dino: HTMLElement = document.getElementById("dino")!;
